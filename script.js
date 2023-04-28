@@ -41,7 +41,7 @@ const pokeDex = {
         carPoke.innerHTML += `
         <div class="pokemon ${colorPoke}">          
               <div class="img-container">
-                  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${dados[i].id}.png">
+                  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${dados[i].id}.gif">
               </div>
               <div class="info">
                   <span class="number">#${dados[i].id}</span>
