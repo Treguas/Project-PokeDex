@@ -3,7 +3,7 @@
 }
 
 body {
-  background: black;
+  background: rgb(0, 0, 0);
   font-family: 'Lato', sans-serif;
   display: flex;
   flex-direction: column;
@@ -89,7 +89,7 @@ h1 {
   }
 
 
-.card {
+.list {
   display: flex;
   flex-wrap: wrap;
   align-items: space-between;
@@ -193,3 +193,52 @@ h1 {
 .ice {
   background: linear-gradient(to right, #c3fdfd, #72d4d4, #35b9b9 ,#468a8a );
 }
+
+/* PAGINATION */
+
+#paginate {
+  width: 100%;
+  margin: 32px auto;
+}
+
+#paginate .item {
+  padding: 16px 32px;
+}
+
+#paginate .item:hover {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+#paginate .pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+#paginate .pagination .numbers {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14;
+  color: #fff;
+}
+
+#paginate .pagination div:not(.numbers),
+#paginate .pagination div.numbers div {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+}
+
+#paginate .pagination div.numbers div:hover,
+#paginate .pagination div.numbers div.active {
+  color: rgb(95, 22, 129);
+}
+
+.active {
+  color: red;
+}
+
+/* END PAGINATION */
