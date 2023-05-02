@@ -240,5 +240,18 @@ h1 {
 .active {
   color: red;
 }
+ .first:hover {
+  cursor: pointer;
+}
+
+.pagination .prev {
+  cursor: pointer;
+}
+.pagination .next {
+  cursor: pointer;
+}
+.pagination .last {
+  cursor: pointer;
+}
 
 /* END PAGINATION */
