@@ -128,13 +128,13 @@ function Paginate() {
 
   const update = async () => {
     this.data = await pokeDex.getPokemon().then((response) => {
-      this.data = cardPokemonHTML(response);
+      this.data = this.cardPokemonHTML(response);
       updateList();
       buttons.update();
     })
   }
 
-  const cardPokemonHTML = (dados)=> {
+  this.cardPokemonHTML = (dados)=> {
     const arrDados = [];
     for(let i in dados) {
       let typesHTML = '';
