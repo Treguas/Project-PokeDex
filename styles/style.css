@@ -12,6 +12,30 @@ body {
   margin: 0;
 }
 
+.header {
+  /* background: red; */
+  width: 100vw;
+  height: 2.4rem;
+}
+
+.header div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.header div input {
+  border: none;
+  height: 100%;
+  outline: none;
+}
+
+.ph-bold {
+  cursor: pointer;
+  padding: 0.4rem;
+}
+
 h1 {
   color: white;
   letter-spacing: 3px;

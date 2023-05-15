@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pokédex Pokemon</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <!-- biblioteca de icones -->
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css" />
 </head>
+
 <body>
+
+  <header class="header">
+    <div>
+      <div>
+        <input type="text" data-search class="form-control" placeholder="Pesquisar">
+        <i class="ph-bold ph-magnifying-glass" style="height: 100%; background: white; color: hotpink"></i>
+      </div>
+    </div>
+  </header>
+
   <h1 class="glitch" id="textGlitch">PokeDex</h1>
   <!-- <div class="card" id="card">
    
@@ -26,7 +40,9 @@
     </div>
   </section>
 
-  <script src="script.js"></script>
-  <script src="paginate.js"></script>
+  <script src="services/services.js"></script>
+  <script src="scripts/paginate.js"></script>
+  <script src="scripts/main.js"></script>
 </body>
+
 </html>
